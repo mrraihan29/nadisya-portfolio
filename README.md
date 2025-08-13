@@ -26,7 +26,8 @@ A sophisticated, dual-theme portfolio website for Nadisya - a professional model
 ## 🛠️ Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 - Docker (for deployment)
 
@@ -73,10 +74,12 @@ nadisya-portfolio/
 ## 🎨 Design Features
 
 ### Color Themes
+
 - **Classic**: Clean white background with elegant typography
 - **Vibrant**: Colorful gradients with pink/lilac/purple hues
 
 ### Components
+
 - **Artistic Header**: Floating logo with 3D effects
 - **Hero Section**: Full-screen image with scroll indicators
 - **Masonry Gallery**: 10 images in artistic grid layout
@@ -84,6 +87,7 @@ nadisya-portfolio/
 - **Contact Cards**: Professional contact information
 
 ### Animations
+
 - Scroll-triggered reveals
 - Hover effects and transitions
 - 3D transforms and parallax
@@ -92,6 +96,7 @@ nadisya-portfolio/
 ## 🐳 Docker Deployment
 
 ### Quick Start
+
 ```bash
 # Build and run containers
 docker-compose up -d --build
@@ -101,6 +106,7 @@ docker-compose up -d --build
 ```
 
 ### Production Deployment
+
 ```bash
 # Use deployment script
 ./deploy.sh        # Linux/Mac
@@ -111,13 +117,14 @@ See [DOCKER_DEPLOYMENT.md](./DOCKER_DEPLOYMENT.md) for detailed deployment instr
 
 ## 🌐 Live Demo
 
-[Visit Live Portfolio](https://your-domain.com) *(Update with your actual domain)*
+[Visit Live Portfolio](https://your-domain.com) _(Update with your actual domain)_
 
 ## 📸 Gallery
 
 The portfolio showcases 10 professional photos across different categories:
+
 - **Editorial**: Artistic and creative shots
-- **Lifestyle**: Natural and candid moments  
+- **Lifestyle**: Natural and candid moments
 - **Portrait**: Professional headshots
 - **Fashion**: Style and fashion photography
 - **Creative**: Experimental and artistic work
@@ -132,6 +139,7 @@ The portfolio showcases 10 professional photos across different categories:
 ## 🔧 Development
 
 ### Available Scripts
+
 ```bash
 npm run dev          # Start development server
 npm run build        # Build for production
@@ -141,6 +149,7 @@ npm run lint         # Lint code
 ```
 
 ### Customization
+
 - **Colors**: Edit CSS custom properties in `app.css`
 - **Content**: Update component files in `src/lib/components/`
 - **Images**: Replace files in `static/` directory
@@ -168,6 +177,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 **Nadisya**
+
 - Portfolio: [Live Website](https://your-domain.com)
 - Email: contact@nadisya.com
 - Location: Jakarta, Indonesia
