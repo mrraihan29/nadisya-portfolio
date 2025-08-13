@@ -5,13 +5,7 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "sveltekit",
-  "outputDirectory": ".svelte-kit",
-  "regions": ["sin1"],
-  "functions": {
-    "src/routes/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
+  "regions": ["iad1"],
   "headers": [
     {
       "source": "/(.*)",
