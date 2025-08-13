@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  nadisya-portfolio:
+    build: .
+    container_name: nadisya-portfolio
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'wget', '--no-verbose', '--tries=1', '--spider', 'http://localhost:3000/']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.nadisya.rule=Host(`portfolio.example.com`)'
+      - 'traefik.http.services.nadisya.loadbalancer.server.port=3000'
+
+  # Optional: Add a reverse proxy for custom domain and SSL
+  nginx:
+    image: nginx:alpine
+    container_name: nadisya-nginx
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - nadisya-portfolio
+    restart: unless-stopped
